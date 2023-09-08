@@ -59,7 +59,7 @@ const SearchManufacturer = ( {manufacturer, setManufacturer}:SearchManufacturerP
                                 key={item}
                                 className={({active}) =>`
                                 relative search-manufacturer__option
-                                ${active ? 'bg-gray-200 text-white font-bold' : 'text-gray-900 font-bold'}
+                                ${active ? 'bg-gray-500 text-black font-bold' : 'text-gray-900 font-bold'}
                                 `}
                                 value={item}
                                 >
