@@ -32,7 +32,7 @@ export default async function Home() {
           <section className="text-white">
             <div className="home__cars wrapper">
               {allCars?.map((car) => (
-                <CardCard car={car} />
+                <CardCard car={car}/>
               ))}
             </div>
           </section>

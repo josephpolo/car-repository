@@ -16,3 +16,18 @@ export async function fetchCars() {
     return result;
     
 }
+
+export const calculateCarRent = (city_mpg: number, year:number) => {
+    const basePricePerDay = 50; // Base rental price per day
+    const mileAgeFactor = 0.1; // Additional rate per mile driven
+    const ageFactor = 0.05; // Additional rate per year of vehicle age
+
+    //calculate addtional rate base on mileage and age
+    const mileageRate = city_mpg * mileAgeFactor;
+    const ageRate = (new Date().getFullYear() - year) * ageFactor;
+
+   //calculate total rent per day
+   const rentalRatePerDay = basePricePerDay + mileageRate + ageRate;
+   
+   return rentalRatePerDay.toFixed(0);
+}
