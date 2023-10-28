@@ -37,7 +37,7 @@ export default async function Home( {searchParams} ) {
 
         {!isDataEmpty ? (
           <section className="text-white">
-            <div className="home__cars wrapper">
+            <div className="home__cars-wrapper">
               {allCars?.map((car) => (
                 <CardCard car={car}/>
               ))}
